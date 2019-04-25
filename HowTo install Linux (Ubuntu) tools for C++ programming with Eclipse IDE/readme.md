@@ -119,12 +119,17 @@ sudo plcncli install sdk -p
 sudo mkdir -p /opt/pxc/plcncli/AXCF2152/2019.0
 sudo mv ./plcncli/* /opt/pxc/plcncli/AXCF2152/2019.0
 ```
+To simplify calling the file in the console create symbolic link:
+
+```sh
+ln -s /opt/pxc/plcncli/AXCF2152/2019.0/plcncli /usr/local/bin/plcncli
+```
 
 Install **SDK**:
 
 ```sh
 chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.3.sh
-sudo /opt/pxc/plcncli/AXCF2152/2019.0/plcncli install sdk -p pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.3.sh -d /opt/pxc/sdk/AXCF2152/2019.3
+sudo plcncli install sdk -p pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.3.sh -d /opt/pxc/sdk/AXCF2152/2019.3
 ```
 
 Check **SDK**:
