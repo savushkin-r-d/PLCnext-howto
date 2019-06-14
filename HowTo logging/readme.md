@@ -9,6 +9,10 @@ cat /opt/plcnext/logs/Output.log
 
 To constantly monitor the file content use this:
 
+```sh
+tail -F /opt/plcnext/logs/Output.log
+```
+
 ![tail -F /opt/plcnext/logs/Output.log](images/tail_F.gif)
 
 The parameter **-F** is important - it makes possible to see changes after file recreation (because of log rotation).
@@ -32,7 +36,7 @@ System log file is located here: *"/var/log/messages"*. You can view this file c
 If it is required to find some certain events - it is possible to use *grep*:
 
 ```sh
-cat /opt/plcnext/logs/Output.log | grep Arp.System
+tail -F /var/log/messages | grep Arp.System
 ```
 
 ## 3. Using **syslog**. ##
