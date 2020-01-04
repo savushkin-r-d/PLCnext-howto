@@ -9,6 +9,7 @@
 ```sh
 java -version
 ```
+
 ![java version](images/java_-version.png)
 
 If not installed, install **OpenJdk**:
@@ -31,6 +32,8 @@ or use wget to download **2019.9 R** version (risk of being changed):
 wget -P ~/Downloads http://ftp.snt.utwente.nl/pub/software/eclipse//technology/epp/downloads/release/2019-09/R/eclipse-cpp-2019-09-R-linux-gtk-x86_64.tar.gz
 ```
 
+Make sure you download the correct package and the download was successful.
+
 Extract the „eclipse-cpp-2019-09-R-linux-gtk-x86_64.tar.gz“:
 
 ```sh
@@ -47,6 +50,7 @@ Create a desktop launcher for Eclipse:
 ```sh
 sudo nano /usr/share/applications/eclipse.desktop
 ```
+
 Copy the following into the desktop file:
 
 ```sh
@@ -94,9 +98,7 @@ chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.
 
 Specify the path to install:
 
-
 >/opt/pxc/sdk/AXCF2152/2019.9
-
 
 ## 4. Configure Eclipse® IDE to use the installed PLCnext SDK ##
 
@@ -115,7 +117,7 @@ Set project cross G++ Compiler dialect settings:
 
 Set project cross G++ Preprocessor defines:
 
->-ARP_DEVICE_AXCF2152
+>ARP_DEVICE_AXCF2152
 
 ![SDK ok](images/cdt_defines.png)
 
@@ -131,4 +133,4 @@ Set project cross G++ Linker flags:
 
 ![SDK ok](images/cdt_cross_linker_settings.png)
 
-You also need to check the availability of the utility **make**. To do this, enter in the console *make*,if not, then install.
+After completing all the settings, run the project and, if there are errors, you need to go through all the previous steps and check the spelling of the commands.
