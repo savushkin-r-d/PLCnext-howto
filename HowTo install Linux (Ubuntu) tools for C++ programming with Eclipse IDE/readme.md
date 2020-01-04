@@ -1,6 +1,6 @@
 # How to configure Eclipse® to program and crosscompile for the AXC F 2152 on Ubuntu 18.04 LTS #
 
-> This HowTo only works for the AXC F 2152 firmware version 2019.3. For other devices or FW versions the build flags are different and could change from version to version.
+> This HowTo only works for the AXC F 2152 firmware version 2019.9. For other devices or FW versions the build flags are different and could change from version to version.
 
 ## 1. Install **Eclipse®** IDE ##
 
@@ -9,6 +9,7 @@
 ```sh
 java -version
 ```
+
 ![java version](images/java_-version.png)
 
 If not installed, install **OpenJdk**:
@@ -31,6 +32,8 @@ or use wget to download **2019.9 R** version (risk of being changed):
 wget -P ~/Downloads http://ftp.snt.utwente.nl/pub/software/eclipse//technology/epp/downloads/release/2019-09/R/eclipse-cpp-2019-09-R-linux-gtk-x86_64.tar.gz
 ```
 
+Make sure you download the correct package and the download was successful.
+
 Extract the „eclipse-cpp-2019-09-R-linux-gtk-x86_64.tar.gz“:
 
 ```sh
@@ -47,6 +50,7 @@ Create a desktop launcher for Eclipse:
 ```sh
 sudo nano /usr/share/applications/eclipse.desktop
 ```
+
 Copy the following into the desktop file:
 
 ```sh
@@ -115,6 +119,10 @@ It can be installed with the following command:
 sudo apt-get install mono-complete
 ```
 
+Specify the path to install:
+
+>/opt/pxc/sdk/AXCF2152/2019.9
+
 ## 4. Configure Eclipse® IDE to use the installed PLCnext SDK ##
 
 Set project cross settings (prefix and path):
@@ -126,13 +134,13 @@ Set project cross settings (prefix and path):
 
 Set project cross G++ Compiler dialect settings:
 
->-march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 --sysroot=/opt/pxc/sdk/AXCF2152/2019.9/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -fno-gnu-unique
+>-march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 --sysroot=/opt/pxc/AXCF2152/2019.9/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -fno-gnu-unique
 
 ![SDK ok](images/cdt_dialect_flags.png)
 
 Set project cross G++ Preprocessor defines:
 
->-ARP_DEVICE_AXCF2152
+>ARP_DEVICE_AXCF2152
 
 ![SDK ok](images/cdt_defines.png)
 
@@ -147,3 +155,5 @@ Set project cross G++ Linker flags:
 >--sysroot=/opt/pxc/sdk/AXCF2152/2019.9/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -Wl,--no-undefined
 
 ![SDK ok](images/cdt_cross_linker_settings.png)
+
+After completing all the settings, run the project and, if there are errors, you need to go through all the previous steps and check the spelling of the commands.
