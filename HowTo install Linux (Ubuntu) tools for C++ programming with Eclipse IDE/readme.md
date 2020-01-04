@@ -78,8 +78,7 @@ sudo ln -s /opt/eclipse/eclipse
 ## 3. Install the Toolchain ##
 
 The SDK contains all components (libraries and toolchains) to create a C++ application for
-PLCnext Technology. It is located in the self-extracting file (bash script) "pxc-glibc-x86_64-
-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2.2.sh".
+PLCnext Technology.
 
 Unzip **SDK**:
 
@@ -105,23 +104,13 @@ Install **SDK**, setting shortcut as executable:
 chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.9.sh
 ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.9.sh
 ```
+Specify the path to install:
+
+>/opt/pxc/sdk/AXCF2152/2019.9
 
 **Note**:
 Several PLCnext Technology SDKs can be used in parallel. To prevent a mix of different
 versions, Phoenix Contact recommends removing all older SDKs.
-
-**Installing Mono-Complete**
-
-The Mono-Complete package is required for using the PLCnext Technology Library Builder.
-It can be installed with the following command:
-
-```sh
-sudo apt-get install mono-complete
-```
-
-Specify the path to install:
-
->/opt/pxc/sdk/AXCF2152/2019.9
 
 ## 4. Configure Eclipse® IDE to use the installed PLCnext SDK ##
 
