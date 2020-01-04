@@ -22,6 +22,7 @@ Afterwards, the check should look like this:
 ![java version ok](images/java_-version_ok.png)
 
 2. To install **Eclipse IDE for C/C++ Developers** visit https://www.eclipse.org/downloads/packages/, select and download appropriate package:
+
 ![eclipse package](images/eclipse_package.png)
 
 or use wget to download **2019.3 R** version (risk of being changed):
