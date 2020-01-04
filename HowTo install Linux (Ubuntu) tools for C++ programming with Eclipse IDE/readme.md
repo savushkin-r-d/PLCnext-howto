@@ -170,9 +170,7 @@ Set project cross G++ Preprocessor includes:
 
 Set project cross G++ Linker flags:
 
-```sh
---sysroot=/opt/pxc/AXCF2152/2019.9/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -Wl,--no-undefined
-```
+>--sysroot=/opt/pxc/AXCF2152/2019.9/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -Wl,--no-undefined
 
 ![SDK ok](images/cdt_cross_linker_settings.png)
 
