@@ -77,6 +77,9 @@ sudo ln -s /opt/eclipse/eclipse
 
 ## 3. Install the Toolchain ##
 
+The SDK contains all components (libraries and toolchains) to create a C++ application for
+PLCnext Technology.
+
 Unzip **SDK**:
 
 Download the needed SDK from the Phoenix Contact webside.
@@ -89,16 +92,25 @@ Navigate to the folder where your SDK is located.
 unzip SDK_Linux64_2019.9.zip
 ```
 
+**Note**:
+Avoid spaces in the SDK directory.
+
+**Note**:
+The archive is always extracted in the same directory.
+
 Install **SDK**:
 
 ```sh
 chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.9.sh
 ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.9.sh
 ```
-
 Specify the path to install:
 
 >/opt/pxc/AXCF2152/2019.9
+
+**Note**:
+Several PLCnext Technology SDKs can be used in parallel. To prevent a mix of different
+versions, Phoenix Contact recommends removing all older SDKs.
 
 ## 4. Configure Eclipse® IDE to use the installed PLCnext SDK ##
 
