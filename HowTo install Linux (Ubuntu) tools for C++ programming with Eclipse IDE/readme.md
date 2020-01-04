@@ -22,7 +22,6 @@ Afterwards, the check should look like this:
 ![java version ok](images/java_-version_ok.png)
 
 2. To install **Eclipse IDE for C/C++ Developers** visit https://www.eclipse.org/downloads/packages/, select and download appropriate package:
-The installation of the pocket must be done on ubuntu
 ![eclipse package](images/eclipse_package.png)
 
 or use wget to download **2019.3 R** version (risk of being changed):
@@ -30,7 +29,7 @@ or use wget to download **2019.3 R** version (risk of being changed):
 ```sh
 wget -P ~/Downloads http://ftp.snt.utwente.nl/pub/software/eclipse//technology/epp/downloads/release/2019-03/R/eclipse-cpp-2019-03-R-linux-gtk-x86_64.tar.gz
 ```
-Make sure you download the correct package and that the download was successful.
+Make sure you download the correct package and the download was successful.
 
 Extract the „eclipse-cpp-2019-03-R-linux-gtk-x86_64.tar.gz“:
 
@@ -78,8 +77,6 @@ Unzip **SDK**:
 
 Download the needed SDK from the Phoenix Contact webside.
 
-Check the SDK version. Your version may differ from the one shown in the example.
-
 [LINK](http://www.phoenixcontact.com/qr/2404267/softw)
 
 Navigate to the folder where your SDK is located.
@@ -96,8 +93,6 @@ chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.
 ```
 
 ## 4. Configure Eclipse® IDE to use the installed PLCnext SDK ##
-
-When you created the project, you need to find out the exact path in order not to make a mistake in further settings.
 
 Set project cross settings (prefix and path):
 
@@ -129,4 +124,5 @@ Set project cross G++ Linker flags:
 >--sysroot=/opt/pxc/sdk/AXCF2152/2019.3/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -Wl,--no-undefined
 
 ![SDK ok](images/cdt_cross_linker_settings.png)
-After completing all the settings, run the project and if there are errors associated with the path, you need to go through all the previous steps and check the spelling of the commands. If the make utility is not installed, you must install it.
+
+After completing all the settings, run the project and, if there are errors, you need to go through all the previous steps and check the spelling of the commands.
