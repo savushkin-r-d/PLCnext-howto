@@ -98,14 +98,14 @@ chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.
 
 Specify the path to install:
 
->/opt/pxc/sdk/AXCF2152/2019.9
+>/opt/pxc/AXCF2152/2019.9
 
 ## 4. Configure Eclipse® IDE to use the installed PLCnext SDK ##
 
 Set project cross settings (prefix and path):
 
 >arm-pxc-linux-gnueabi-  
->/opt/pxc/sdk/AXCF2152/2019.9/sysroots/x86_64-pokysdk-linux/usr/bin/arm-pxc-linux-gnueabi
+>/opt/pxc/AXCF2152/2019.9/sysroots/x86_64-pokysdk-linux/usr/bin/arm-pxc-linux-gnueabi
 
 ![SDK ok](images/cdt_cross_settings.png)
 
@@ -123,13 +123,13 @@ Set project cross G++ Preprocessor defines:
 
 Set project cross G++ Preprocessor includes:
 
->/opt/pxc/sdk/AXCF2152/2019.9/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/plcnext
+>/opt/pxc/AXCF2152/2019.9/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/plcnext
 
 ![SDK ok](images/cdt_includes.png)
 
 Set project cross G++ Linker flags:
 
->--sysroot=/opt/pxc/sdk/AXCF2152/2019.9/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -Wl,--no-undefined
+>--sysroot=/opt/pxc/AXCF2152/2019.9/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -Wl,--no-undefined
 
 ![SDK ok](images/cdt_cross_linker_settings.png)
 
