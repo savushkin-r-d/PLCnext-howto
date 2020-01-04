@@ -109,7 +109,7 @@ Set project cross G++ Compiler dialect settings:
 
 Set project cross G++ Preprocessor defines:
 
->-ARP_DEVICE_AXCF2152
+>ARP_DEVICE_AXCF2152
 
 ![SDK ok](images/cdt_defines.png)
 
