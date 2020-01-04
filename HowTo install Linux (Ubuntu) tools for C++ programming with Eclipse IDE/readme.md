@@ -1,4 +1,4 @@
-﻿# How to configure Eclipse® to program and crosscompile for the AXC F 2152 on Ubuntu 18.04 LTS #
+# How to configure Eclipse® to program and crosscompile for the AXC F 2152 on Ubuntu 18.04 LTS #
 
 > This HowTo only works for the AXC F 2152 firmware version 2019.3. For other devices or FW versions the build flags are different and could change from version to version.
 
@@ -9,6 +9,7 @@
 ```sh
 java -version
 ```
+
 ![java version](images/java_-version.png)
 
 If not installed, install **OpenJdk**:
@@ -30,6 +31,7 @@ or use wget to download **2019.3 R** version (risk of being changed):
 ```sh
 wget -P ~/Downloads http://ftp.snt.utwente.nl/pub/software/eclipse//technology/epp/downloads/release/2019-03/R/eclipse-cpp-2019-03-R-linux-gtk-x86_64.tar.gz
 ```
+
 Make sure you download the correct package and the download was successful.
 
 Extract the „eclipse-cpp-2019-03-R-linux-gtk-x86_64.tar.gz“:
@@ -48,6 +50,7 @@ Create a desktop launcher for Eclipse:
 ```sh
 sudo nano /usr/share/applications/eclipse.desktop
 ```
+
 Copy the following into the desktop file:
 
 ```sh
