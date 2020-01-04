@@ -98,7 +98,7 @@ Avoid spaces in the SDK directory.
 **Note**:
 The archive is always extracted in the same directory.
 
-Install **SDK**, setting shortcut as executable:
+Install **SDK**:
 
 ```sh
 chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.9.sh
