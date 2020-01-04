@@ -9,6 +9,7 @@
 ```sh
 java -version
 ```
+
 ![java version](images/java_-version.png)
 
 If not installed, install **OpenJdk**:
@@ -31,6 +32,8 @@ or use wget to download **2019.3 R** version (risk of being changed):
 wget -P ~/Downloads http://ftp.snt.utwente.nl/pub/software/eclipse//technology/epp/downloads/release/2019-03/R/eclipse-cpp-2019-03-R-linux-gtk-x86_64.tar.gz
 ```
 
+Make sure you download the correct package and the download was successful.
+
 Extract the „eclipse-cpp-2019-03-R-linux-gtk-x86_64.tar.gz“:
 
 ```sh
@@ -47,6 +50,7 @@ Create a desktop launcher for Eclipse:
 ```sh
 sudo nano /usr/share/applications/eclipse.desktop
 ```
+
 Copy the following into the desktop file:
 
 ```sh
@@ -124,3 +128,5 @@ Set project cross G++ Linker flags:
 >--sysroot=/opt/pxc/sdk/AXCF2152/2019.3/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -Wl,--no-undefined
 
 ![SDK ok](images/cdt_cross_linker_settings.png)
+
+After completing all the settings, run the project and, if there are errors, you need to go through all the previous steps and check the spelling of the commands.
