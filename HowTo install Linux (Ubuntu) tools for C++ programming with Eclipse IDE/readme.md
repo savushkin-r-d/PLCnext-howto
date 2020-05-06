@@ -1,6 +1,6 @@
 # How to configure Eclipse® to program and crosscompile for the AXC F 2152 on Ubuntu 18.04 LTS #
 
-> This HowTo only works for the AXC F 2152 firmware version 2019.3. For other devices or FW versions the build flags are different and could change from version to version.
+> This HowTo only works for the AXC F 2152 firmware version 2020.0. For other devices or FW versions the build flags are different and could change from version to version.
 
 ## 1. Install **Eclipse®** IDE ##
 
@@ -25,17 +25,17 @@ Afterwards, the check should look like this:
 
 ![eclipse package](images/eclipse_package.png)
 
-or use wget to download **2019.3 R** version (risk of being changed):
+or use wget to download **2020.0 R** version (risk of being changed):
 
 ```sh
-wget -P ~/Downloads http://ftp.snt.utwente.nl/pub/software/eclipse//technology/epp/downloads/release/2019-03/R/eclipse-cpp-2019-03-R-linux-gtk-x86_64.tar.gz
+wget -P ~/Downloads http://ftp.snt.utwente.nl/pub/software/eclipse//technology/epp/downloads/release/2020-0/R/eclipse-cpp-2020-0-R-linux-gtk-x86_64.tar.gz
 ```
 
-Extract the „eclipse-cpp-2019-03-R-linux-gtk-x86_64.tar.gz“:
+Extract the „eclipse-cpp-2020-0-R-linux-gtk-x86_64.tar.gz“:
 
 ```sh
 cd ~/Downloads
-tar -xzf eclipse-cpp-2019-03-R-linux-gtk-x86_64.tar.gz
+tar -xzf eclipse-cpp-2020-0-R-linux-gtk-x86_64.tar.gz
 ```
 
 > **Hint:** Move the extracted folder to */opt*. The **Opt**ional folder is typically for programs not installed via a packagemanager and in contrast to the home folder, it is accessable for any user on the system.
@@ -82,14 +82,14 @@ Download the needed SDK from the Phoenix Contact webside.
 Navigate to the folder where your SDK is located.
 
 ```sh
-unzip SDK_Linux64_2019.3.zip
+unzip SDK_Linux64_2020.0.zip
 ```
 
 Install **SDK**:
 
 ```sh
-chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.3.sh
-./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.3.sh
+chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2020.0.sh
+./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2020..sh
 ```
 
 ## 4. Configure Eclipse® IDE to use the installed PLCnext SDK ##
@@ -97,13 +97,13 @@ chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.
 Set project cross settings (prefix and path):
 
 >arm-pxc-linux-gnueabi-  
->/opt/pxc/sdk/AXCF2152/2019.3/sysroots/x86_64-pokysdk-linux/usr/bin/arm-pxc-linux-gnueabi
+>/opt/pxc/sdk/AXCF2152/2020.0/sysroots/x86_64-pokysdk-linux/usr/bin/arm-pxc-linux-gnueabi
 
 ![SDK ok](images/cdt_cross_settings.png)
 
 Set project cross G++ Compiler dialect settings:
 
->-march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 --sysroot=/opt/pxc/sdk/AXCF2152/2019.3/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -fno-gnu-unique
+>-march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 --sysroot=/opt/pxc/sdk/AXCF2152/2020.0/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -fno-gnu-unique
 
 ![SDK ok](images/cdt_dialect_flags.png)
 
@@ -115,12 +115,12 @@ Set project cross G++ Preprocessor defines:
 
 Set project cross G++ Preprocessor includes:
 
->/opt/pxc/sdk/AXCF2152/2019.3/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/plcnext
+>/opt/pxc/sdk/AXCF2152/2020.0/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/plcnext
 
 ![SDK ok](images/cdt_includes.png)
 
 Set project cross G++ Linker flags:
 
->--sysroot=/opt/pxc/sdk/AXCF2152/2019.3/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -Wl,--no-undefined
+>--sysroot=/opt/pxc/sdk/AXCF2152/2020.0/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -Wl,--no-undefined
 
 ![SDK ok](images/cdt_cross_linker_settings.png)
