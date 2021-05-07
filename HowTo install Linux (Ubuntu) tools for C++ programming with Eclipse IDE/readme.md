@@ -26,10 +26,10 @@ Afterwards, the check should look like this:
 
 ![eclipse package](images/eclipse_package.png)
 
-or use wget to download **2020.0 R** version (risk of being changed):
+or use wget to download **2020‑03 R** version (risk of being changed):
 
 ```sh
-wget -P ~/Downloads http://ftp.snt.utwente.nl/pub/software/eclipse//technology/epp/downloads/release/2020-0/R/eclipse-cpp-2020-0-R-linux-gtk-x86_64.tar.gz
+wget -P ~/Downloads http://http://ftp.snt.utwente.nl/pub/software/eclipse/technology/epp/downloads/release/2020-03/R/eclipse-cpp-2020-03-R-incubation-linux-gtk-x86_64.tar.gz
 ```
 Make sure you download the correct package and the download was successful.
 
