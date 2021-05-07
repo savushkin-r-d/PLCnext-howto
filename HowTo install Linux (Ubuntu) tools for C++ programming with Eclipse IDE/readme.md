@@ -9,6 +9,7 @@
 ```sh
 java -version
 ```
+
 ![java version](images/java_-version.png)
 
 If not installed, install **OpenJdk**:
@@ -30,6 +31,7 @@ or use wget to download **2020.0 R** version (risk of being changed):
 ```sh
 wget -P ~/Downloads http://ftp.snt.utwente.nl/pub/software/eclipse//technology/epp/downloads/release/2020-0/R/eclipse-cpp-2020-0-R-linux-gtk-x86_64.tar.gz
 ```
+Make sure you download the correct package and the download was successful.
 
 Extract the „eclipse-cpp-2020-0-R-linux-gtk-x86_64.tar.gz“:
 
@@ -47,6 +49,7 @@ Create a desktop launcher for Eclipse:
 ```sh
 sudo nano /usr/share/applications/eclipse.desktop
 ```
+
 Copy the following into the desktop file:
 
 ```sh
@@ -73,6 +76,9 @@ sudo ln -s /opt/eclipse/eclipse
 
 ## 3. Install the Toolchain ##
 
+The SDK contains all components (libraries and toolchains) to create a C++ application for
+PLCnext Technology.
+
 Unzip **SDK**:
 
 Download the needed SDK from the Phoenix Contact webside.
@@ -85,12 +91,25 @@ Navigate to the folder where your SDK is located.
 unzip SDK_Linux64_2020.0.zip
 ```
 
+**Note**:
+Avoid spaces in the SDK directory.
+
+**Note**:
+The archive is always extracted in the same directory.
+
 Install **SDK**:
 
 ```sh
 chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2020.0.sh
 ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2020..sh
 ```
+Specify the path to install:
+
+>/opt/pxc/sdk/AXCF2152/2020.0
+
+**Note**:
+Several PLCnext Technology SDKs can be used in parallel. To prevent a mix of different
+versions, Phoenix Contact recommends removing all older SDKs.
 
 ## 4. Configure Eclipse® IDE to use the installed PLCnext SDK ##
 
@@ -109,7 +128,7 @@ Set project cross G++ Compiler dialect settings:
 
 Set project cross G++ Preprocessor defines:
 
->-ARP_DEVICE_AXCF2152
+>ARP_DEVICE_AXCF2152
 
 ![SDK ok](images/cdt_defines.png)
 
@@ -124,3 +143,5 @@ Set project cross G++ Linker flags:
 >--sysroot=/opt/pxc/sdk/AXCF2152/2020.0/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -Wl,--no-undefined
 
 ![SDK ok](images/cdt_cross_linker_settings.png)
+
+After completing all the settings, run the project and, if there are errors, you need to go through all the previous steps and check the spelling of the commands.
