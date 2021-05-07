@@ -2,6 +2,8 @@
 
 > This HowTo only works for AXC F **x**152 controllers and the AXC F firmware version 2021.0 LTS. For other devices or FW versions the instructions could change from version to version.
 
+> Based on the official [documentation](https://www.plcnext.help/te/Programming/Cpp/Cpp-programming.htm).
+
 ## 1. Installing **MS Visual Studio Community®** IDE ##
 
 1. To install **Visual Studio Community®** visit https://visualstudio.microsoft.com/, select and download Community version.
