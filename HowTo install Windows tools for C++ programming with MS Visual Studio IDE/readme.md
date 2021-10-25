@@ -71,3 +71,11 @@ plcncli.exe install sdk -d C:\CLI\SDKs\AXCF2152\2021_0\ -p pxc-glibc-x86_64-ming
 Now you can create a C++ project from a **PLCnext** template. Start Visual Studio, select `"Create a new project"` and search for **plcnext** in the Dialog box to show the **PLCnext** project templates and select the template that fits your needs, then click Next.
 
 More information is located [here](https://www.plcnext.help/te/Programming/Cpp/Cpp_programming/Creating_a_Cpp_project_in_Visual_Studio.htm).
+
+## 5. Opening existed C++ project in Visual Studio ##
+
+Due to a known [issue](https://github.com/PLCnext/PLCnext_CLI_VS/issues/4) you might get compile-time errors, to fix this you have to delete the local .NET cache:
+
+```ps
+rmdir %temp%\.net /s
+```
