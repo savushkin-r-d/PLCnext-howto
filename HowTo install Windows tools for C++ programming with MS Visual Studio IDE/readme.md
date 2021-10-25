@@ -74,7 +74,7 @@ More information is located [here](https://www.plcnext.help/te/Programming/Cpp/C
 
 ## 5. Opening existed C++ project in Visual Studio ##
 
-Due to a known [issue] (https://github.com/PLCnext/PLCnext_CLI_VS/issues/4) you might get compile-time errors, to fix this you have to delete the local .NET cache:
+Due to a known [issue](https://github.com/PLCnext/PLCnext_CLI_VS/issues/4) you might get compile-time errors, to fix this you have to delete the local .NET cache:
 
 ```ps
 rmdir %temp%\.net /s
