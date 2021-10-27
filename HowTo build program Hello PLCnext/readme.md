@@ -1,4 +1,4 @@
-# How to create a simple "Hello PLCnext" application #
+# How to build a simple "Hello PLCnext" application #
 
 > Based on the official [documentation](https://github.com/PLCnext/SampleRuntime/blob/master/getting-started/Part-01/README.md).
 
