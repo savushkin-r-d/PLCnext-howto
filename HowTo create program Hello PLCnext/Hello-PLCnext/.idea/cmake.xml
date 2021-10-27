@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeSharedSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug AXCF2152 2021.0.3 LTS" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=c:\CLI\SDKs\AXCF2152\2021_0\toolchain.cmake -DARP_TOOLCHAIN_ROOT=c:\CLI\SDKs\AXCF2152\2021_0 -DARP_DEVICE=AXCF2152 -DARP_DEVICE_VERSION=&quot;2021.0.3 LTS (21.0.3.35554)&quot;" />
+      <configuration PROFILE_NAME="Debug AXCF2152 2021.0.3 LTS" ENABLED="true" GENERATION_DIR="bin-cmake-build-debug-axcf2152-202103-lts" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_TOOLCHAIN_FILE=${PLCNEXT_SDK_ROOT}\toolchain.cmake -DARP_DEVICE=AXCF2152 -DARP_DEVICE_VERSION=&quot;2021.0.3 LTS (21.0.3.35554)&quot;" />
     </configurations>
   </component>
 </project>

@@ -1,4 +1,4 @@
-﻿{
+{
     "configurations": [
         {
             "name": "Debug-AXCF2152-2021.0.3 LTS",
@@ -6,10 +6,10 @@
             "configurationType": "Debug",
             "buildRoot": "${projectDir}\\out\\build\\${name}",
             "installRoot": "${projectDir}\\out\\install\\${name}",
-            "cmakeCommandArgs": "-DARP_TOOLCHAIN_ROOT=c:\\CLI\\SDKs\\AXCF2152\\2021_0 -DARP_DEVICE=AXCF2152 -DARP_DEVICE_VERSION=\"2021.0.3 LTS (21.0.3.35554)\" -DCMAKE_BUILD_WITH_INSTALL_RPATH=True",
+            "cmakeCommandArgs": "-DARP_DEVICE=AXCF2152 -DARP_DEVICE_VERSION=\"2021.0.3 LTS (21.0.3.35554)\" -DCMAKE_BUILD_WITH_INSTALL_RPATH=True",
             "buildCommandArgs": "",
             "ctestCommandArgs": "",
-            "cmakeToolchain": "C:/CLI/SDKs/AXCF2152/2021_0/toolchain.cmake",
+            "cmakeToolchain": "${env.PLCNEXT_SDK_ROOT}\\toolchain.cmake",
             "inheritEnvironments": []
         }
     ]
