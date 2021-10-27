@@ -1,5 +1,7 @@
 # How to create a simple "Hello PLCnext" application #
 
+> Based on the official [documentation](https://github.com/PLCnext/SampleRuntime/blob/master/getting-started/Part-01/README.md).
+
 ## 1. Using Windows OS and MS Visual Studio 2019 Community ##
 
 Set required environment variable **PLCNEXT_SDK_ROOT** - it specifies the full path to the root directory of the SDK. Please change this, if necessary, to the path of the SDK that you are using:
