@@ -6,17 +6,17 @@
 
 Configure:
 ```sh
-cmake -E env PLCNEXT_SDK_ROOT="c:\CLI\SDKs\AXCF2152\2021_0" ARP_DEVICE="AXCF2152" ARP_DEVICE_VERSION="2021.0.3 LTS (21.0.3.35554)" cmake --preset=default .
+cmake --preset=build-windows-AXCF2152-2021.0.3.35554 .
 ```
 
 Build:
 ```sh
-cmake -E env PLCNEXT_SDK_ROOT="c:\CLI\SDKs\AXCF2152\2021_0" ARP_DEVICE="AXCF2152" ARP_DEVICE_VERSION="2021.0.3 LTS (21.0.3.35554)" cmake --build --preset=default
+cmake --build --preset=build-windows-AXCF2152-2021.0.3.35554 --target all
 ```
 
 Deploy:
 ```sh
-cmake -E env PLCNEXT_SDK_ROOT="c:\CLI\SDKs\AXCF2152\2021_0" ARP_DEVICE="AXCF2152" ARP_DEVICE_VERSION="2021.0.3 LTS (21.0.3.35554)" cmake --build --preset=default --target install
+cmake --build --preset=build-windows-AXCF2152-2021.0.3.35554 --target install
 ```
 
 In above commands:
