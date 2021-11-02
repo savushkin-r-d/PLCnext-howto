@@ -8,6 +8,7 @@
     "configurePresets": [
         {
             "name": "default",
+            "hidden": true,
             "displayName": "Default Config",
             "description": "Default build using Ninja generator",
             "generator": "Ninja",
@@ -18,13 +19,12 @@
                 "ARP_DEVICE": "$env{ARP_DEVICE}",
                 "ARP_DEVICE_VERSION": "$env{ARP_DEVICE_VERSION}",
                 "CMAKE_BUILD_WITH_INSTALL_RPATH": true
-            },
-            "cmakeExecutable": "cmake"
+            }
         },
         {
             "name": "build-windows-AXCF2152-2021.0.3.35554",
             "inherits": "default",
-            "displayName": "AXCF2152-2021.0.3.35554",
+            "displayName": "AXCF2152-2021.0.3",
             "environment": {
                 "ARP_DEVICE": "AXCF2152",
                 "ARP_DEVICE_VERSION": "2021.0.3 LTS (21.0.3.35554)",
@@ -41,12 +41,27 @@
                     "type": "FILEPATH"
                 }
             }
+        },
+        {
+            "name": "build-linux-AXCF2152-2021.0.3.35554",
+            "inherits": "default",
+            "displayName": "AXCF2152-2021.0.3",
+            "environment": {
+                "ARP_DEVICE": "AXCF2152",
+                "ARP_DEVICE_VERSION": "2021.0.3 LTS (21.0.3.35554)",
+                "PLCNEXT_SDK_ROOT": "/opt/pxc/SDKs/AXCF2152/2021_0"
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Linux"
+            }
         }
     ],
     "buildPresets": [
         {
             "name": "build-windows-AXCF2152-2021.0.3.35554",
-            "displayName": "AXCF2152-2021.0.3.35554",
+            "displayName": "AXCF2152-2021.0.3",
             "configurePreset": "build-windows-AXCF2152-2021.0.3.35554"
         }
     ],

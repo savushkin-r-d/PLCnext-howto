@@ -4,6 +4,8 @@
 
 ## 1. Using command line (pure **CMake**) ##
 
+After cloning repository execute this steps inside `"HowTo build program Hello PLCnext\Hello-PLCnext"` working direcrory.
+
 Configure:
 ```sh
 cmake --preset=build-windows-AXCF2152-2021.0.3.35554 .
@@ -19,41 +21,32 @@ Deploy:
 cmake --build --preset=build-windows-AXCF2152-2021.0.3.35554 --target install
 ```
 
-In above commands:
- - The PLCNEXT_SDK_ROOT parameter specifies the full path to the root directory of the SDK. Please change this, if necessary, to the path of the SDK that you are using.
- - The ARP_DEVICE and ARP_DEVICE_VERSION parameters should specify the SDK device and version. Please change these if necessary.
+In above commands the `build-windows-AXCF2152-2021.0.3.35554` preset name specifies build parameters on OS Windows for AXC 2152. It is stored in `"HowTo build program Hello PLCnext\Hello-PLCnext\CMakePresets.json"` file. Inside this file you can found parameters:
+
+ - The `PLCNEXT_SDK_ROOT` parameter specifies the full path to the root directory of the SDK.
+ - The `ARP_DEVICE` and `ARP_DEVICE_VERSION` parameters should specify the SDK device and version.
+
+You can change it, if necessary, to the SDK device, version and path of the SDK that you are using.
 
 After you can find executable here:
 >deploy\AXCF2152_21.0.3.35554\Release\bin\hello_PLCnext
 
-## 2. Using Windows OS and MS Visual Studio 2019 Community ##
+On **Linux OS** use `build-linux-AXCF2152-2021.0.3.35554` preset name.
 
-Set required environment variable **PLCNEXT_SDK_ROOT** - it specifies the full path to the root directory of the SDK. Please change this, if necessary, to the path of the SDK that you are using:
+## 2. Using MS Visual Code ##
 
-```sh
-setx PLCNEXT_SDK_ROOT "c:\CLI\SDKs\AXCF2152\2021_0"
-```
+Open directory `"HowTo build program Hello PLCnext\Hello-PLCnext"` in MS Visual Code.
 
-Open directory **Hello-PLCnext** in MS Visual Studio. Example using command line:
+Thus you have opened CMake-based project. Set auto-suggested configuration and build the application.
 
-```sh
-"%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe" ./Hello-PLCnext
-```
+## 3. Using MS Visual Studio 2019 Community (Windows OS) ##
 
-Thus you have opened CMake-based project. Build the application (press **F7** to start build process).
+Open directory `"HowTo build program Hello PLCnext\Hello-PLCnext"` in MS Visual Studio.
 
-## 3. Using JetBrains IDE CLion 2021.2.3 ##
+Thus you have opened CMake-based project. Set auto-suggested configuration and build the application (press **F7** to start build process).
 
-Set required environment variable **PLCNEXT_SDK_ROOT** - it specifies the full path to the root directory of the SDK. Please change this, if necessary, to the path of the SDK that you are using. On Windows use this command:
+## 4. Using other IDE which support CMake presets ##
 
-```sh
-setx PLCNEXT_SDK_ROOT "c:\CLI\SDKs\AXCF2152\2021_0"
-```
+Open directory `"HowTo build program Hello PLCnext\Hello-PLCnext"` in IDE.
 
-On Linux use this command:
-
-```sh
-export PLCNEXT_SDK_ROOT="/opt/pxc/SDKs/AXCF2152/2021_0"
-```
-
-Open directory **Hello-PLCnext** in CLion. Thus you have opened CMake-based project. Build the application (press **F7** to start build process).
+Thus you have opened CMake-based project. Set auto-suggested configuration and build the application.
