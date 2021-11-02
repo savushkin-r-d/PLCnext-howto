@@ -2,7 +2,7 @@
 
 > Based on the official [documentation](https://github.com/PLCnext/SampleRuntime/blob/master/getting-started/Part-01/README.md).
 
-## 1. Using command line (pure **CMake**) ##
+## Using command line (pure **CMake**) ##
 
 After cloning repository execute this steps inside `"HowTo build program Hello PLCnext\Hello-PLCnext"` working direcrory.
 
@@ -33,19 +33,19 @@ After you can find executable here:
 
 On **Linux OS** use `build-linux-AXCF2152-2021.0.3.35554` preset name.
 
-## 2. Using MS Visual Code ##
+## Using MS Visual Code ##
 
 Open directory `"HowTo build program Hello PLCnext\Hello-PLCnext"` in MS Visual Code.
 
 Thus you have opened CMake-based project. Set auto-suggested configuration and build the application.
 
-## 3. Using MS Visual Studio 2019 Community (Windows OS) ##
+## Using MS Visual Studio 2019 Community (Windows OS) ##
 
 Open directory `"HowTo build program Hello PLCnext\Hello-PLCnext"` in MS Visual Studio.
 
 Thus you have opened CMake-based project. Set auto-suggested configuration and build the application (press **F7** to start build process).
 
-## 4. Using other IDE which support CMake presets ##
+## Using other IDE which support CMake presets ##
 
 Open directory `"HowTo build program Hello PLCnext\Hello-PLCnext"` in IDE.
 
