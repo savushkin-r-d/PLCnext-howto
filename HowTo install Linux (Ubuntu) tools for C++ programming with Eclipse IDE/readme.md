@@ -40,7 +40,11 @@ cd ~/Downloads
 tar -xzf eclipse-cpp-2020-0-R-linux-gtk-x86_64.tar.gz
 ```
 
+<<<<<<< HEAD
 > **Hint:** Move the extracted folder to */opt*. The **Opt**ional folder is typically for programs not installed via a packagemanager and in contrast to the home folder, it is accessible for any user on the system.
+=======
+> **Hint:** Move the extracted folder to */opt*. The **Opt**ional folder is typically for programs not installed via a packagemanager and in contrast to the home folder, it is accessable for any user on the system.
+>>>>>>> parent of 95cb2e8 (Update HowTo install Linux (Ubuntu) tools for C++ programming with Eclipse IDE)
 >
 > \> sudo mv eclipse /opt/
 
@@ -65,7 +69,7 @@ Categories=Development;IDE
 Name[en]=eclipse.desktop
 ```
 
-Create a symlink to make eclipse available from the console:
+Create a symlink to make eclipse avaible from the console:
 
 ```sh
 cd /usr/local/bin
