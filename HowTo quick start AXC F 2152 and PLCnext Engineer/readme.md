@@ -28,7 +28,7 @@ The firmware latest release is located [here](https://www.phoenixcontact.com/onl
 
 To update the controller firmware, proceed as follows:
 
-- Download the *.zip firmware file with version **2020.0.1 LTS** at Phoenix Contact [site](https://select.phoenixcontact.com/phoenix/dwl/dwl13a.jsp?fct=dwl&asid=7449344&name=AXC_F_2152_FW2020_0_1_LTS.zip&prodid=2404267&lang=en&hwv=&debug=0).
+- Download the *.zip firmware file with version **2021.0.1 LTS** at Phoenix Contact [site](https://select.phoenixcontact.com/phoenix/dwl/dwl13a.jsp?fct=dwl&asid=7449344&name=AXC_F_2152_FW2020_0_1_LTS.zip&prodid=2404267&lang=en&hwv=&debug=0).
 
 - Unzip the *.zip firmware file.
 
@@ -62,7 +62,7 @@ The following access data is set by default:
 
 You have to select the update file. Default location is:
 ```
-c:\Users\Public\Documents\PLCnext\Firmware\FW2020_0_1_LTS\axcf2152-bundle-base-axcf2152.raucb
+c:\Users\Public\Documents\PLCnext\Firmware\FW2021_0_1_LTS\axcf2152-bundle-base-axcf2152.raucb
 ```
 Update is ready to be installed:
 
