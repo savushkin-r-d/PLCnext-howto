@@ -41,7 +41,7 @@ cd ~/Downloads
 tar -xzf eclipse-cpp-2021-09-R-linux-gtk-x86_64.tar.gz
 ```
 
-> **Hint:** Move the extracted folder to */opt*. The **Opt**ional folder is typically for programs not installed via a package manager and in contrast to the home folder, it is accessible for any user on the system.
+> **Hint:** Move the extracted folder to */opt*. The **Opt**ional folder is typically for programs not installed via a packagemanager and in contrast to the home folder, it is accessible for any user on the system.
 >
 > \> sudo mv eclipse /opt/
 
