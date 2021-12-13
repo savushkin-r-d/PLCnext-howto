@@ -74,7 +74,7 @@ Following this, the controller is restarted. Once the controller has been fully 
 
 ## PLCnext Engineer project creation ##
 
-It's important to use the appropriate version of **`"PLCnext Engineer"`** - **`"2020.0.1"`**.  Start **`"PLCnext Engineer"`** and select **`"Empty AXC F 2152 v00 / 2020.0.0 project"`**:
+It's important to use the appropriate version of **`"PLCnext Engineer"`** - **`"2021.09"`**.  Start **`"PLCnext Engineer"`** and select **`"Empty AXC F 2152 v00 / 2020.0.0 project"`**:
 
 <p align="center"> <img src="images/new_project_PLCnextEng.png"> </p>
 <p align="center"> Figure 7. Creating new project</p>
