@@ -62,7 +62,7 @@ The following access data is set by default:
 
 You have to select the update file. Default location is:
 ```
-c:\Users\Public\Documents\PLCnext\Firmware\FW2021_0_1_LTS\axcf2152-bundle-base-axcf2152.raucb
+c:\Users\Public\Documents\PLCnext\Firmware\FW2021_09_LTS\axcf2152-bundle-base-axcf2152.raucb
 ```
 Update is ready to be installed:
 
