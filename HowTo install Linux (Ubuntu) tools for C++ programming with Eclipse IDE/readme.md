@@ -1,6 +1,6 @@
 # How to configure Eclipse® to program and crosscompile for the AXC F 2152 on Ubuntu 18.04 LTS #
 
-> This HowTo only works for the AXC F 2152 firmware version 2021.09. For other devices or FW versions the build flags are different and could change from version to version.
+> This HowTo only works for the AXC F 2152 firmware version 2021.9. For other devices or FW versions the build flags are different and could change from version to version.
 
 ## 1. Install **Eclipse®** IDE ##
 
