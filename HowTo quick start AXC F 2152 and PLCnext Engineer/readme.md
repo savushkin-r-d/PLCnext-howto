@@ -28,7 +28,7 @@ The firmware latest release is located [here](https://www.phoenixcontact.com/onl
 
 To update the controller firmware, proceed as follows:
 
-- Download the *.zip firmware file with version **2021.09 LTS** at Phoenix Contact [site](https://select.phoenixcontact.com/phoenix/dwl/dwl13a.jsp?fct=dwl&asid=7449344&name=AXC_F_2152_FW2020_0_1_LTS.zip&prodid=2404267&lang=en&hwv=&debug=0).
+- Download the *.zip firmware file with version **2021.0.5 LTS** at Phoenix Contact [site](https://select.phoenixcontact.com/phoenix/dwl/dwl13a.jsp?fct=dwl&asid=7449344&name=AXC_F_2152_FW2020_0_1_LTS.zip&prodid=2404267&lang=en&hwv=&debug=0).
 
 - Unzip the *.zip firmware file.
 
@@ -62,7 +62,7 @@ The following access data is set by default:
 
 You have to select the update file. Default location is:
 ```
-c:\Users\Public\Documents\PLCnext\Firmware\FW2021_09_LTS\axcf2152-bundle-base-axcf2152.raucb
+c:\Users\Public\Documents\PLCnext\Firmware\FW2021_0_5_LTS\axcf2152-bundle-base-axcf2152.raucb
 ```
 Update is ready to be installed:
 
@@ -74,7 +74,7 @@ Following this, the controller is restarted. Once the controller has been fully 
 
 ## PLCnext Engineer project creation ##
 
-It's important to use the appropriate version of **`"PLCnext Engineer"`** - **`"2021.09"`**.  Start **`"PLCnext Engineer"`** and select **`"Empty AXC F 2152 v00 / 2020.0.0 project"`**:
+It's important to use the appropriate version of **`"PLCnext Engineer"`** - **`"2021.0.5"`**.  Start **`"PLCnext Engineer"`** and select **`"Empty AXC F 2152 v00 / 2021.0.5 project"`**:
 
 <p align="center"> <img src="images/new_project_PLCnextEng.png"> </p>
 <p align="center"> Figure 7. Creating new project</p>
