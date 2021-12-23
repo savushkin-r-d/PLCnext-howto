@@ -32,7 +32,7 @@ To update the controller firmware, proceed as follows:
 
 - Unzip the *.zip firmware file.
 
-File (*.raucb*) is already installed, so the update file (*.raucb*)and PDF files with device-specific information will be copied to the selected destination directory.
+File (*.raucb*) is already installed, so the update file (*.raucb*) and PDF files with device-specific information will be copied to the selected destination directory.
 
 - Open your browser, then go to web-based management (WBM) page [https://192.168.1.10/wbm](https://192.168.1.10/wbm):
 
