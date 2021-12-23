@@ -28,15 +28,9 @@ The firmware latest release is located [here](https://www.phoenixcontact.com/onl
 
 To update the controller firmware, proceed as follows:
 
-- Download the *.zip firmware file with version **2020.0.1 LTS** at Phoenix Contact [site](https://select.phoenixcontact.com/phoenix/dwl/dwl13a.jsp?fct=dwl&asid=7449344&name=AXC_F_2152_FW2020_0_1_LTS.zip&prodid=2404267&lang=en&hwv=&debug=0).
+- Download the *.zip firmware file with version **2021.0.5 LTS** at Phoenix Contact [site](https://select.phoenixcontact.com/phoenix/dwl/dwl13a.jsp?fct=dwl&asid=7603204&name=AXC_F_2152_FW2021_0_5_Bundle.zip&prodid=2404267&lang=en&debug=0&refer=https%3a%2f%2fselect%2ephoenixcontact%2ecom%2fphoenix%2fdwl%2fdwlgwisrev01%2ejsp%3flanguage%3den%26prodid%3d2404267%26lang%3den%26pxc_s%3dy%26pxc_env%3dp_e&intCount=1&hwv=04).
 
-- Unzip the *.zip firmware file.
-
-- Run the *.exe setup file.
-
-- Follow the instructions of the installation wizard.
-
-When installing, the update file (*.raucb) and PDF files with device-specific information will be copied to the selected destination directory.
+- Unzip the *.zip firmware file (default windows-proposed destination directory is `%USERPROFILE%\Downloads\AXC_F_2152_FW2021_0_5_Bundle`). The update file (*.raucb) and PDF files with device-specific information will be unziped to the selected destination directory.
 
 - Open your browser, then go to web-based management (WBM) page [https://192.168.1.10/wbm](https://192.168.1.10/wbm):
 
@@ -62,7 +56,7 @@ The following access data is set by default:
 
 You have to select the update file. Default location is:
 ```
-c:\Users\Public\Documents\PLCnext\Firmware\FW2020_0_1_LTS\axcf2152-bundle-base-axcf2152.raucb
+%USERPROFILE%\Downloads\AXC_F_2152_FW2021_0_5_Bundle\axcf2152-2021.0.5.35585-LTS.raucb
 ```
 Update is ready to be installed:
 
@@ -74,7 +68,7 @@ Following this, the controller is restarted. Once the controller has been fully 
 
 ## PLCnext Engineer project creation ##
 
-It's important to use the appropriate version of **`"PLCnext Engineer"`** - **`"2020.0.1"`**.  Start **`"PLCnext Engineer"`** and select **`"Empty AXC F 2152 v00 / 2020.0.0 project"`**:
+It's important to use the appropriate version of **`"PLCnext Engineer"`** - **`"2021.0.5"`** (or newer).  Start **`"PLCnext Engineer"`** and select **`"Empty AXC F 2152 v00 / 2021.0.0 project"`**:
 
 <p align="center"> <img src="images/new_project_PLCnextEng.png"> </p>
 <p align="center"> Figure 7. Creating new project</p>
