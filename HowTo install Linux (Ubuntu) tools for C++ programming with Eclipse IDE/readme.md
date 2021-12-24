@@ -102,13 +102,13 @@ versions, Phoenix Contact recommends removing all older SDKs.
 Set project cross settings (prefix and path):
 
 >arm-pxc-linux-gnueabi-  
->/opt/pxc/sdk/AXCF2152/2021.09/sysroots/x86_64-pokysdk-linux/usr/bin/arm-pxc-linux-gnueabi
+>/opt/pxc/sdk/AXCF2152/2021.9/sysroots/x86_64-pokysdk-linux/usr/bin/arm-pxc-linux-gnueabi
 
 ![SDK ok](images/cdt_cross_settings.png)
 
 Set project cross G++ Compiler dialect settings:
 
->-march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 --sysroot=/opt/pxc/sdk/AXCF2152/2021.09/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -fno-gnu-unique
+>-march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 --sysroot=/opt/pxc/sdk/AXCF2152/2021.9/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -fno-gnu-unique
 
 ![SDK ok](images/cdt_dialect_flags.png)
 
@@ -120,7 +120,7 @@ Set project cross G++ Preprocessor defines:
 
 Set project cross G++ Preprocessor includes:
 
->/opt/pxc/sdk/AXCF2152/2021.09/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/plcnext
+>/opt/pxc/sdk/AXCF2152/2021.9/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/plcnext
 
 ![SDK ok](images/cdt_includes.png)
 
