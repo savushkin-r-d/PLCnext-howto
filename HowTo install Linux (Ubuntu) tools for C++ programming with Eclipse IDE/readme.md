@@ -26,7 +26,7 @@ Afterwards, the check should look like this:
 
 ![eclipse package](images/eclipse_package.png)
 
-or use wget to download **2021‑09 R** version (risk of being changed):
+or use wget to download **2021‑9 R** version (risk of being changed):
 
 ```sh
 wget -P ~/Downloads 
@@ -75,44 +75,29 @@ sudo ln -s /opt/eclipse/eclipse
 
 **Eclipse** is now ready to use.
 
-## 3. Install the Toolchain ##
+## 2. Install the Toolchain ##
 
-The SDK contains all components (libraries and toolchains) to create a C++ application for
-PLCnext Technology.
-
-Unzip **SDK**:
-
-Download the needed SDK from the Phoenix Contact webside.
+Download the needed toolchain from the Phoenix Contact webside.
 
 [LINK](https://www.phoenixcontact.com/online/portal/pi?uri=pxc-oc-itemdetail:pid=2404267&library=piru&tab=5&requestType=qr&productId=2404267#softw)
 
-Navigate to the folder where your SDK is located.
+Navigate to the folder where your toolchain is located.
+
+Install toolchain:
 
 ```sh
-unzip PLCnCLI_SDK_2021.0.5_LTS_Linux_AXC_F_2152.tar.gz
-```
-
-**Note**:
-Avoid spaces in the SDK directory.
-
-**Note**:
-The archive is always extracted in the same directory.
-
-Install **SDK**:
-
-```sh
-chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2021.09.sh
-./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2021.09.sh
+chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2021.9.sh
+./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2021.9.sh
 ```
 Specify the path to install:
 
->/opt/pxc/sdk/AXCF2152/2021.09
+>/opt/pxc/sdk/AXCF2152/2021.9
 
 **Note**:
 Several PLCnext Technology SDKs can be used in parallel. To prevent a mix of different
 versions, Phoenix Contact recommends removing all older SDKs.
 
-## 4. Configure Eclipse® IDE to use the installed PLCnext SDK ##
+## 3. Configure Eclipse® IDE to use the installed PLCnext SDK ##
 
 Set project cross settings (prefix and path):
 
