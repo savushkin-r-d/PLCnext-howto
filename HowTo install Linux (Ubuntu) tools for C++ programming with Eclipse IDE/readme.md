@@ -89,6 +89,14 @@ Install toolchain:
 chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2021.9.sh
 ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2021.9.sh
 ```
+Specify the path to install:
+
+>/opt/pxc/sdk/AXCF2152/2021.9
+
+**Note**:
+Several PLCnext Technology SDKs can be used in parallel. To prevent a mix of different
+versions, Phoenix Contact recommends removing all older SDKs.
+
 ## 3. Configure Eclipse® IDE to use the installed PLCnext SDK ##
 
 Set project cross settings (prefix and path):
