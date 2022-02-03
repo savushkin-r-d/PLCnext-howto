@@ -74,7 +74,7 @@ sudo make install
 ```
 ## 2. Deploying **valgrind** to a controller ##
 
-Copy directory `/opt/valgrind` to controller to the directory `/opt/valgrind` using **WinSCP**.
+Copy directory `/opt/valgrind` to controller to the directory `/opt/valgrind` (using **WinSCP**).
 
 Make executable:
 ```sh
@@ -139,4 +139,7 @@ valgrind: no program specified
 valgrind: Use --help for more information.
 ```
 
-## 3. Deploying package **libc6-dbg** to a controller ##
+## 3. Deploying libraries with debug information to a controller ##
+
+Copy files from `\opt\pxc\sdk\AXCF2152\2020.0\sysroots\cortexa9t2hf-neon-pxc-linux-gnueabi\lib\.debug\` (PC) to `\lib\.debug\` (controller).
+
