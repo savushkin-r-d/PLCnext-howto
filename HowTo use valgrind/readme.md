@@ -48,10 +48,10 @@ running: autoconf
 
 Setup environment (to be able to crosscompile):
 ```sh
-source /opt/pxc/sdk/AXCF2152/2020.0/environment-setup-cortexa9t2hf-neon-pxc-linux-gnueabi
+source /opt/pxc/sdk/AXCF2152/2021.0/environment-setup-cortexa9t2hf-neon-pxc-linux-gnueabi
 ```
 
-where `/opt/pxc/sdk/AXCF2152/2020.0` - your sdk path.
+where `/opt/pxc/sdk/AXCF2152/2021.0` - your sdk path.
 
 Configure:
 ```sh
@@ -63,9 +63,10 @@ Build:
 make
 ```
 
-Add link to ranlib:
+Create deploy directory and change permissions:
 ```sh
-sudo ln -s /usr/bin/ranlib /usr/bin/arm-pxc-linux-gnueabi-ranlib
+sudo mkdir /opt/valgrind
+sudo chmod 777 /opt/valgrind
 ```
 
 Install:
@@ -74,21 +75,12 @@ sudo make install
 ```
 ## 2. Deploying **valgrind** to a controller ##
 
-Copy directory `/opt/valgrind` to controller to the directory `/opt/valgrind` (using **WinSCP**).
-
-Make executable:
+Copy directory `/opt/valgrind` to controller to the directory `/opt/valgrind`:
 ```sh
-su
-cd /opt/valgrind/bin
-chmod +x ./*
-cd /opt/valgrind/libexec/valgrind
-chmod +x ./memcheck-arm-linux
+scp -r /opt/valgrind/ admin@x.x.x.x:/opt/
 ```
 
-Make symbolic link:
-```sh
-ln -s /opt/valgrind/libexec /usr/local/libexec
-```
+## 3. Checking **valgrind** (on a controller) ##
 
 Check valgrind:
 ```sh
@@ -139,7 +131,47 @@ valgrind: no program specified
 valgrind: Use --help for more information.
 ```
 
-## 3. Deploying libraries with debug information to a controller ##
+## 4. Deploying system libraries with debug information to a controller ##
 
-Copy files from `\opt\pxc\sdk\AXCF2152\2020.0\sysroots\cortexa9t2hf-neon-pxc-linux-gnueabi\lib\.debug\` (PC) to `\lib\.debug\` (controller).
+Copy files from `/opt/pxc/sdk/AXCF2152/2021.0/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi/lib/.debug/` (PC) to `/opt/.debug/` (controller):
+```sh
+scp -r /opt/pxc/sdk/AXCF2152/2021.0/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi/lib/.debug/ admin@x.x.x.x:/opt/
+```
 
+Copy files to `/lib/.debug` (on a controller):
+```sh
+cp -r /opt/.debug/ /lib/
+```
+
+## 5. Using **valgrind** (on a controller) ##
+
+Let's check system copy utility **cp**:
+```sh
+/opt/valgrind/bin/valgrind cp
+```
+
+Correct output should be:
+```sh
+==1975== Memcheck, a memory error detector
+==1975== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1975== Using Valgrind-3.19.0.GIT and LibVEX; rerun with -h for copyright info
+==1975== Command: cp
+==1975==
+cp: missing file operand
+Try 'cp --help' for more information.
+==1975==
+==1975== HEAP SUMMARY:
+==1975==     in use at exit: 1,088 bytes in 2 blocks
+==1975==   total heap usage: 4 allocs, 2 frees, 1,120 bytes allocated
+==1975==
+==1975== LEAK SUMMARY:
+==1975==    definitely lost: 0 bytes in 0 blocks
+==1975==    indirectly lost: 0 bytes in 0 blocks
+==1975==      possibly lost: 0 bytes in 0 blocks
+==1975==    still reachable: 1,088 bytes in 2 blocks
+==1975==         suppressed: 0 bytes in 0 blocks
+==1975== Rerun with --leak-check=full to see details of leaked memory
+==1975==
+==1975== For lists of detected and suppressed errors, rerun with: -s
+==1975== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+```
