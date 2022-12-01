@@ -24,7 +24,7 @@ Using browser open default controller address [https://192.168.1.10](https://192
 
 ## Updating the controller firmware ##
 
-The firmware latest release is located [here](https://www.phoenixcontact.com/online/portal/us/pxc/product_detail_page/!ut/p/z1/3Vdbk5owFP4r7oOPMReudqYPinbVVdet2BVeGAiBTQuEBXQvv75hddtdp9WHHWdamMyQhHO-c85HvhCgC9fQzfwtj_2Ki8xP5Nhxdc_u28Phguj4-kbro_FAs4ZT9SsezQn8Bl3oVn4AHVz3Eh4UfvEEnU3Jsnoi5yF0iIpUohv1WEQLy7qCzgIQDLAK0ItbxauEQccSWVWIJGFFC7R6a6v1pUWwRuTgFeH2aD49CXY83Z0_-svVQ6f8HelveCa5skaXKp6ZwylBN7OZbfcn6mBqE7j8Iwu_CSoYZXzLColUs1OIcEOrAat8npTjiqXj93Qd0peHUSpCtvcWJa_f0zssObbZY7Wfo_THIdcSIvGzeOPHNcyJgnDTClIaVpCCmlZQ0zSkNE1DStM0NGmahiZN09CkcUuuaZtCX_3vCpITm4JDJ3-kQFDAZQrhSzafZOjPr5En0OVB2nmgaQd1pGlnH8zb2Xp5DXbbh44e343GsTxhukcPkT28NzhyCF2yzFstvcXaWi1P8N5V4e2Wswe4ykSRyhP7cld8TR7WWeRjwgALCQKqgTHwUVcFpsaCAFE_MuW3aYRORdA_GOEEvHZW-MV54bXzkqMZZ4WffjT7ydGlPlXr_0f-_f7e7UGXyp-7Wp3remdoowcWtFHqc9ndK6pso4SX1YuiZD9PaCbtvYrRu0wkIn7yqEhzkbGsKr38l7DbKDKMCLEAAeIbMlVEFWDqRhcYYURUDTGihwHM09RU6gZW62ebBc9vmomU_cNd8-Zzbfu2_YMOc-B2x-DSCszZUNHi1Du4lb2Li58JGvCS/?uri=pxc-iframe-integration:firmwaredownload&prodid=2404267).
+The firmware latest release is located [here](https://www.phoenixcontact.com/en-pc/products/controller-axc-f-2152-2404267#firmware-link-target).
 
 To update the controller firmware, proceed as follows:
 
