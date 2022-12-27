@@ -37,16 +37,16 @@ On **Linux OS** use `build-linux-AXCF2152-2021.0.3.35554` preset name.
 
 Open directory `"HowTo build program Hello PLCnext\Hello-PLCnext"` in MS Visual Code.
 
-Thus you have opened CMake-based project. Set auto-suggested configuration and build the application.
+Thus, you have opened CMake-based project. Set the auto-suggested configuration and build the application.
 
 ## Using MS Visual Studio 2019 Community (Windows OS) ##
 
 Open directory `"HowTo build program Hello PLCnext\Hello-PLCnext"` in MS Visual Studio.
 
-Thus you have opened CMake-based project. Set auto-suggested configuration and build the application (press **F7** to start build process).
+Thus, you have opened CMake-based project. Set auto-suggested configuration and build the application (press **F7** to start build process).
 
 ## Using other IDE which support CMake presets ##
 
 Open directory `"HowTo build program Hello PLCnext\Hello-PLCnext"` in IDE.
 
-Thus you have opened CMake-based project. Set auto-suggested configuration and build the application.
+Thus, you have opened CMake-based project. Set auto-suggested configuration and build the application.
