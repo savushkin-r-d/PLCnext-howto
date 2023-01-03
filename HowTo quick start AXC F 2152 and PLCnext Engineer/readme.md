@@ -30,9 +30,9 @@ To update the controller firmware, proceed as follows:
 
 - Download the *.zip firmware file with version **2021.0.5 LTS** at Phoenix Contact [site](https://www.phoenixcontact.com/en-pc/products/controller-axc-f-2152-2404267#firmware-link-target:~:text=AXC_F_2152_FW2021_0_5_Bundle.zip&prodid=2404267&lang=en&debug=0&refer=https%3a%2f%2fselect%2ephoenixcontact%2ecom%2fphoenix%2fdwl%2fdwlgwisrev01%2ejsp%3flanguage%3den%26prodid%3d2404267%26lang%3den%26pxc_s%3dy%26pxc_env%3dp_e&intCount=1&hwv=04 ).
 
-- Unzip the *.zip firmware file (default windows-proposed destination directory is `%USERPROFILE%\Downloads\AXC_F_2152_FW2021_0_5_Bundle`). The update file (*.raucb) and PDF files with device-specific information will be unziped to the selected destination directory.
+- Unzip the *.zip firmware file (default windows-proposed destination directory is `%USERPROFILE%\Downloads\AXC_F_2152_FW2021_0_5_Bundle`). The update file (*.raucb) and PDF files with device-specific information will be unzipped to the selected destination directory.
 
-- Open your browser, then go to web-based management (WBM) page [https://192.168.1.10/wbm](https://192.168.1.10/wbm):
+- Open your browser, then go to the web-based management (WBM) page [https://192.168.1.10/wbm](https://192.168.1.10/wbm):
 
 <p align="center"> <img src="images/login_screen.png"> </p>
 <p align="center"> Figure 3. Login screen</p>
@@ -63,7 +63,7 @@ Update is ready to be installed:
 <p align="center"> <img src="images/ready_update_screen.png"> </p>
 <p align="center"> Figure 6. Firmware update</p>
 
-Start update by pressing **`"Start Update"`** button. The firmware will be updated and the web page shows updating process. During the firmware update, the RUN LED begins to flash, and then stops.
+Start update by pressing **`"Start Update"`** button. The firmware will be updated and the web page shows the updating process. During the firmware update, the RUN LED begins to flash, and then stops.
 Following this, the controller is restarted. Once the controller has been fully initialized, the RUN LED lights up permanently.
 
 ## PLCnext Engineer project creation ##
