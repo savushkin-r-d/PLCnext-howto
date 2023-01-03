@@ -43,10 +43,10 @@ Thus, you have opened CMake-based project. Set the auto-suggested configuration 
 
 Open directory `"HowTo build program Hello PLCnext\Hello-PLCnext"` in MS Visual Studio.
 
-Thus, you have opened CMake-based project. Set auto-suggested configuration and build the application (press **F7** to start build process).
+Thus, you have opened CMake-based project. Set the auto-suggested configuration and build the application (press **F7** to start build process).
 
 ## Using other IDE which support CMake presets ##
 
 Open directory `"HowTo build program Hello PLCnext\Hello-PLCnext"` in IDE.
 
-Thus, you have opened CMake-based project. Set auto-suggested configuration and build the application.
+Thus, you have opened CMake-based project. Set the auto-suggested configuration and build the application.
