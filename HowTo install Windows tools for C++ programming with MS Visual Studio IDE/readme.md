@@ -35,7 +35,7 @@ plcncli 21.6.0.726 (21.6.0.726)
 ```
 ## 3. Downloading PLCnext Technology C++ Toolchain ##
 
-Download the latest version from the Phoenix Contact website https://www.phoenixcontact.com/products (for example from the **AXC F 2152** area - http://www.phoenixcontact.com/qr/2404267/softw, current is `2021.9`).
+Download the latest version (current is 2022.0.4 LTS) ```sdk for Windows 64 bit``` from the Phoenix Contact website https://www.phoenixcontact.com/products (for example from the **AXC F 2152** area, in the section Downloads->Software $-$ http://www.phoenixcontact.com/qr/2404267/softw).
 
 Navigate to the folder where downloads are located (typical path `%userprofile%/Downloads`), unzip the archive (`SDK_2021.9_Windows_AXC_F_2152.tar.xz.zip`).
 
@@ -49,10 +49,12 @@ plcncli.exe install sdk –d [installation path] –p [path to archive file]
 
 >If you install several SDKs, Phoenix Contact recommends to use the "target name/firmware version" folder structure.
 
+> Also your  installation path must match with path in CMake
+
 E.g.:
 
 ```ps
-plcncli.exe install sdk -d C:\CLI\SDKs\AXCF2152\2021_9\ -p pxc-glibc-x86_64-mingw32-axcf2152-image-mingw-cortexa9t2hf-neon-axcf2152-toolchain-2021.9.tar.xz
+plcncli.exe install sdk -d C:\CLI\sdks\AXCF2152\2022_0\ -p pxc-glibc-x86_64-mingw32-axcf2152-image-mingw-cortexa9t2hf-neon-axcf2152-toolchain-2022.0.tar.xz
 ```
 
 >The SDK is specified to the controller. The full list of controllers can be found on the PHOENIX CONTACT International site ([Home > Products > PLCs and I/O systems > PLCnext Control > Product list PLCnext Technology components](https://www.phoenixcontact.com/online/portal/pi?1dmy&urile=wcm%3apath%3a/pien/web/main/products/list_pages/PLCnext_technology_components_P-21-14-01/f77f0eb0-2a70-40c3-8679-7df2450e26db)).
