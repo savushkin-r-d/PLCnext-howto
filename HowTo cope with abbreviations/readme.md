@@ -1,4 +1,4 @@
-# How to cope with abbreviations. #
+# How to cope with abbreviations #
 
 
 ## List of Commonly Used Abbreviations. ##
