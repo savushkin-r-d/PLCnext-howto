@@ -22,13 +22,13 @@
             }
         },
         {
-            "name": "build-windows-AXCF2152-2021.0.3.35554",
+            "name": "build-windows-AXCF2152-2023.6.0.43",
             "inherits": "default",
-            "displayName": "AXCF2152-2021.0.3",
+            "displayName": "AXCF2152-2023.6.0",
             "environment": {
                 "ARP_DEVICE": "AXCF2152",
-                "ARP_DEVICE_VERSION": "2021.0.3 LTS (21.0.3.35554)",
-                "PLCNEXT_SDK_ROOT": "c:/CLI/SDKs/AXCF2152/2021_0"
+                "ARP_DEVICE_VERSION": "2023.6.0 (23.6.0.43)",
+                "PLCNEXT_SDK_ROOT": "c:/CLI/SDKs/AXCF2152/2023_6"
             },
             "condition": {
                 "type": "equals",
@@ -60,9 +60,9 @@
     ],
     "buildPresets": [
         {
-            "name": "build-windows-AXCF2152-2021.0.3.35554",
-            "displayName": "AXCF2152-2021.0.3",
-            "configurePreset": "build-windows-AXCF2152-2021.0.3.35554"
+            "name": "build-windows-AXCF2152-2023.6.0.43",
+            "displayName": "AXCF2152-2023.6.0",
+            "configurePreset": "build-windows-AXCF2152-2023.6.0.43"
         }
     ],
     "testPresets": [
