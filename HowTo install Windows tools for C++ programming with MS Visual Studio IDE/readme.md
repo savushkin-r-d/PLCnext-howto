@@ -52,7 +52,7 @@ plcncli.exe install sdk –d [installation path] –p [path to archive file]
 E.g.:
 
 ```ps
-plcncli.exe install sdk -d C:\CLI\SDKs\AXCF2152\2021_9\ -p pxc-glibc-x86_64-mingw32-axcf2152-image-mingw-cortexa9t2hf-neon-axcf2152-toolchain-2021.9.tar.xz
+plcncli.exe install sdk -d C:\CLI\SDKs\AXCF2152\2023_6\ -p axcf2152-mingw_sdk-2023.6.0-23.6.0.43.tar.xz
 ```
 
 >The SDK is specified to the controller. The full list of controllers can be found on the PHOENIX CONTACT International site ([Home > Products > PLCs and I/O systems > PLCnext Control > Product list PLCnext Technology components](https://www.phoenixcontact.com/online/portal/pi?1dmy&urile=wcm%3apath%3a/pien/web/main/products/list_pages/PLCnext_technology_components_P-21-14-01/f77f0eb0-2a70-40c3-8679-7df2450e26db)).
