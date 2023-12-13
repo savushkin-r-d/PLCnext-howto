@@ -2,6 +2,8 @@
 
 > Based on the official [documentation](https://github.com/PLCnext/SampleRuntime/blob/master/getting-started/Part-01/README.md).
 
+> Русский вариант находится [здесь](./readmeRU.md).
+
 ## Using command line (pure **CMake**) ##
 
 After cloning repository execute this steps inside `"HowTo build program Hello PLCnext\Hello-PLCnext"` working direcrory.
