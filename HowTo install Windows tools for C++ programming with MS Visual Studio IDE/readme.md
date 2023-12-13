@@ -41,7 +41,7 @@ Navigate to the folder where downloads are located (typical path `%userprofile%/
 
 ## 3. Installing (updating) the SDK ##
 
-Navigate to the folder where downloads are previously unzipped, Call the CLI in the console using the following command:
+Navigate to the folder where downloads are previously unzipped. Call the CLI in the console using the following command:
 
 ```ps
 plcncli.exe install sdk –d [installation path] –p [path to archive file]
@@ -65,7 +65,7 @@ More information is located [here](https://www.plcnext.help/te/Programming/Cpp/C
 
 ## 5. Opening existed C++ project in Visual Studio ##
 
-Due to a known [issue](https://github.com/PLCnext/PLCnext_CLI_VS/issues/4) you might get compile-time errors, to fix this you have to delete the local .NET cache:
+Due to a known [issue](https://github.com/PLCnext/PLCnext_CLI_VS/issues/4) you might get compile-time errors. To fix this, you have to delete the local .NET cache:
 
 ```ps
 rmdir %temp%\.net /s
