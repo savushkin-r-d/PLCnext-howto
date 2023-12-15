@@ -4,7 +4,7 @@
 
 ## Using command line (pure **CMake**) ##
 
-After cloning repository execute this steps inside `"HowTo build program Hello PLCnext\Hello-PLCnext"` working direcrory.
+After cloning the repository execute these steps inside `"HowTo build program Hello PLCnext\Hello-PLCnext"` working directory.
 
 Configure:
 ```sh
