@@ -6,7 +6,7 @@
 
 ## Using command line (pure **CMake**) ##
 
-After cloning repository execute this steps inside `"HowTo build program Hello PLCnext\Hello-PLCnext"` working direcrory.
+After cloning the repository execute these steps inside `"HowTo build program Hello PLCnext\Hello-PLCnext"` working directory.
 
 Configure:
 ```sh
@@ -23,14 +23,14 @@ Deploy:
 cmake --build --preset=build-windows-AXCF2152-2021.0.3.35554 --target install
 ```
 
-In above commands the `build-windows-AXCF2152-2021.0.3.35554` preset name specifies build parameters on OS Windows for AXC 2152. It is stored in `"HowTo build program Hello PLCnext\Hello-PLCnext\CMakePresets.json"` file. Inside this file you can found parameters:
+In above commands the `build-windows-AXCF2152-2021.0.3.35554` preset name specifies build parameters on OS Windows for AXC F 2152. It is stored in `"HowTo build program Hello PLCnext\Hello-PLCnext\CMakePresets.json"` file. Inside this file you can find parameters:
 
  - The `PLCNEXT_SDK_ROOT` parameter specifies the full path to the root directory of the SDK.
  - The `ARP_DEVICE` and `ARP_DEVICE_VERSION` parameters should specify the SDK device and version.
 
 You can change it, if necessary, to the SDK device, version and path of the SDK that you are using.
 
-After you can find executable here:
+After you can find the executable here:
 >deploy\AXCF2152_21.0.3.35554\Release\bin\hello_PLCnext
 
 On **Linux OS** use `build-linux-AXCF2152-2021.0.3.35554` preset name.
