@@ -1,7 +1,9 @@
 # Как создать простое приложение "Hello PLCnext" #
 
+> [!IMPORTANT]
 > Основано на официальной [документации](https://github.com/PLCnext/SampleRuntime/blob/master/getting-started/Part-01/README.md).
 
+> [!TIP]
 > English version is [here](./readmeEN.md).
 
 ## Использование командной строки (чистый **CMake**) ##
