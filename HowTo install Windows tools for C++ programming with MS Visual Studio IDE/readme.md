@@ -12,7 +12,7 @@
 
 >The **PLCnext CLI** is a command line interface that can be used for generating metadata, C++ header files, PLCnext Engineer libraries and for the build process. The functions can be called using simple commands. An integrated help lists the commands and describes their functions.
 
-Download the latest ***LTS*** version ***PLCnext Technology C++ Toolchain for Windows, including compiler, Eclipse Add-in, Microsoft Visual Studio Extention and LibraryBuilder*** from the Phoenix Contact website (for example from the **AXC F 2152** area, in the section [Downloads->Software](http://www.phoenixcontact.com/qr/2404267/softw)).
+Download the latest (recommended LTS) version ***PLCnext Technology C++ Toolchain for Windows, including compiler, Eclipse Add-in, Microsoft Visual Studio Extention and LibraryBuilder*** from the Phoenix Contact website (for example from the **AXC F 2152** area, in the section [Downloads->Software](http://www.phoenixcontact.com/qr/2404267/softw)).
 
 Navigate to the folder where downloads are located (typical path `%userprofile%/Downloads`), unzip the archive (`PLCnext_Toolchain_WindowsSetup_.zip`).
 
@@ -36,9 +36,9 @@ plcncli 21.6.0.726 (21.6.0.726)
 
 ## 3. Downloading PLCnext Technology C++ SDK ##
 
-Download the latest ***LTS*** version ```sdk for Windows 64 bit``` from the Phoenix Contact website (for example from the **AXC F 2152** area, in the section [Downloads->Software](http://www.phoenixcontact.com/qr/2404267/softw)).
+Download the latest (recommended LTS) version ```sdk for Windows 64 bit``` from the Phoenix Contact website (for example from the **AXC F 2152** area, in the section [Downloads->Software](http://www.phoenixcontact.com/qr/2404267/softw)).
 
-Navigate to the folder where downloads are located (typical path `%userprofile%/Downloads`), unzip the archive (`SDK_version_Windows_AXC_F_2152.tar.xz.zip`).
+Navigate to the folder where downloads are located (typical path `%userprofile%/Downloads`), unzip the archive (`SDK_[version]_Windows_AXC_F_2152.tar.xz.zip`).
 
 ### 3.1 Installing (updating) the SDK ##
 
