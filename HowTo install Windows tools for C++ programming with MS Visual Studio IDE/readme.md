@@ -35,7 +35,7 @@ plcncli 21.6.0.726 (21.6.0.726)
 ```
 ## 3. Downloading PLCnext Technology C++ Toolchain ##
 
-Download the latest version (current is 2022.0.4 LTS) ```sdk for Windows 64 bit``` from the Phoenix Contact website https://www.phoenixcontact.com/products (for example from the **AXC F 2152** area, in the section Downloads->Software $-$ http://www.phoenixcontact.com/qr/2404267/softw).
+Download the latest LTS version ```sdk for Windows 64 bit``` from the Phoenix Contact website https://www.phoenixcontact.com/products (for example from the **AXC F 2152** area, in the section Downloads->Software $-$ http://www.phoenixcontact.com/qr/2404267/softw).
 
 Navigate to the folder where downloads are located (typical path `%userprofile%/Downloads`), unzip the archive (`SDK_2021.9_Windows_AXC_F_2152.tar.xz.zip`).
 
