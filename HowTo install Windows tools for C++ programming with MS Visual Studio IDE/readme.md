@@ -12,7 +12,7 @@
 
 >The **PLCnext CLI** is a command line interface that can be used for generating metadata, C++ header files, PLCnext Engineer libraries and for the build process. The functions can be called using simple commands. An integrated help lists the commands and describes their functions.
 
-Download the latest version from the Phoenix Contact website https://www.phoenixcontact.com/products (for example from the **AXC F 2152** area - http://www.phoenixcontact.com/qr/2404267/softw, current is `2021.6`).
+Download the latest version from the Phoenix Contact website https://www.phoenixcontact.com/products (for example from the **AXC F 2152** area - http://www.phoenixcontact.com/qr/2404267/softw with `2021.6` version).
 
 Navigate to the folder where downloads are located (typical path `%userprofile%/Downloads`), unzip the archive (`PLCnext_Toolchain_WindowsSetup_.zip`).
 
