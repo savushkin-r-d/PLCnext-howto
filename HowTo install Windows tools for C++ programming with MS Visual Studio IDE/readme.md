@@ -37,7 +37,7 @@ plcncli 21.6.0.726 (21.6.0.726)
 
 Download the latest LTS version ```sdk for Windows 64 bit``` from the Phoenix Contact website https://www.phoenixcontact.com/products (for example from the **AXC F 2152** area, in the section Downloads->Software $-$ http://www.phoenixcontact.com/qr/2404267/softw).
 
-Navigate to the folder where downloads are located (typical path `%userprofile%/Downloads`), unzip the archive (`SDK_2021.9_Windows_AXC_F_2152.tar.xz.zip`).
+Navigate to the folder where downloads are located (typical path `%userprofile%/Downloads`), unzip the archive (`SDK_version_Windows_AXC_F_2152.tar.xz.zip`).
 
 ## 3. Installing (updating) the SDK ##
 
